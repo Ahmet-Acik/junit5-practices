@@ -52,13 +52,12 @@ public class ParameterizedTestExampleTest {
     }
 
     // Testing data from an external CSV file
-    @ParameterizedTest
-    @CsvFileSource(resources = "/data.csv", numLinesToSkip = 1)
-    // Reads data from 'data.csv', skipping the first line (header)
-    public void testCsvFileSource(String name, int age) {
-        assertTrue(name.length() > 0, "Name is empty"); // Asserts that the name is not empty
-        assertTrue(age > 0, "Age is not positive"); // Asserts that the age is a positive number
-    }
+@ParameterizedTest
+@CsvFileSource(resources = "/data.csv", numLinesToSkip = 1)
+public void testCsvFileSource(String name, int age) {
+    assertTrue(name.length() > 0, "Name is empty");
+    assertTrue(age > 0, "Age is not positive");
+}
 
     // Testing addition with a variety of cases using a custom ArgumentsProvider
     @ParameterizedTest
