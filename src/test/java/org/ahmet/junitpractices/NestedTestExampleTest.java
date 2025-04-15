@@ -3,7 +3,7 @@ package org.ahmet.junitpractices;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-class NestedTestExample {
+class NestedTestExampleTest {
 
     @Nested
     class InnerTestGroup1 {

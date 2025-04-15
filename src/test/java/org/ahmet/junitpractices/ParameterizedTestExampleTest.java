@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class ParameterizedTestExample {
+public class ParameterizedTestExampleTest {
 
     // Testing if numbers are less than 50 using a fixed set of integers
     @ParameterizedTest
